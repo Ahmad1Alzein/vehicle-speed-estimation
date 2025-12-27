@@ -3,7 +3,7 @@ import kagglehub
 import json
 
 def main(output_file: Path):
-    ua_root = kagglehub.dataset_download("dtrnngc/ua-detrac-dataset")
+    ua_root = kagglehub.dataset_download("bratjay/ua-detrac-orig")
 
     ua_root = Path(ua_root)
     if not ua_root.exists():
