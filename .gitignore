@@ -14,11 +14,7 @@ venv/
 # =====================
 # Data & Models (CV)
 # =====================
-data/
-models/
-*.pt
-*.pth
-*.weights
+
 
 # =====================
 # OS / IDE
@@ -27,3 +23,11 @@ models/
 Thumbs.db
 .vscode/
 .idea/
+
+# =====================
+#downloading dataset
+# =====================
+runtime/
+kaggle.json
+.env
+.env.*
