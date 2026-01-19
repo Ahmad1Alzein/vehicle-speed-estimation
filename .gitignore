@@ -31,3 +31,8 @@ runtime/
 kaggle.json
 .env
 .env.*
+
+# =====================
+#run scripts
+# =====================
+*.bat

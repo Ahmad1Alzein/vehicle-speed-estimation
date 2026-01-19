@@ -1,0 +1,6 @@
+streamlit
+pandas
+opencv-python
+ultralytics
+deep-sort-realtime
+streamlit-image-coordinates
