@@ -77,13 +77,13 @@ def process_video(
 
     # DeepSORT tracker
     tracker = DeepSort(
-        max_age=tracker_max_age,
-        n_init=tracker_n_init,
-        max_iou_distance=tracker_max_iou_distance,
+        max_age=tracker_max_age, # frames to keep lost tracks
+        n_init=tracker_n_init, # frames to confirm a track
+        max_iou_distance=tracker_max_iou_distance, # matching threshold in IOU space
     )
 
     # Speed estimator (your module)
-    estimator = SpeedEstimator(line1=line1, line2=line2, distance_m=distance_m)
+    estimator = SpeedEstimator(line1=line1, line2=line2, distance_m=distance_m) 
 
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():

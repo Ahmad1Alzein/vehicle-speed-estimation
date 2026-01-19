@@ -25,7 +25,7 @@ def side_of_line(line: Line, p: Point) -> float:
     Returns the signed area (cross product) that indicates which side of the line point p lies on.
     Positive/negative indicates side; 0 means on the line (numerically unlikely).
     """
-    ax, ay = line.a
+    ax, ay = line.a # returns the x and y coordinates of point a
     bx, by = line.b
     px, py = p
     return (bx - ax) * (py - ay) - (by - ay) * (px - ax)
